@@ -361,7 +361,9 @@ Here, `Dog` implements two interfaces: `CanRun` and `CanBark`, demonstrating mul
 | **Inheritance**     | A class can extend only one abstract class                                     | A class can implement multiple interfaces                                 |
 | **Constructors**    | Can have constructors                                                          | Cannot have constructors                                                  |
 
-**Reference:** [Difference between Abstract Class and Interface in Java](https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java/)
+**Reference:** [GeeksforGeeks](https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java/) , [tpointtech](https://www.tpointtech.com/difference-between-abstract-class-and-interface)
+
+![alt text](images/abstractVsInterface.png)
 
 ## **Conclusion**
 

@@ -50,6 +50,50 @@ Threads offer benefits such as improved responsiveness and resource sharing but 
 
 ## 5. CPU Scheduling
 
+**CPU scheduling** determines the order in which processes access the CPU. There are two main scheduling methods:
+
+### Pre-emptive Scheduling
+- **Definition**: A scheduling method where the CPU can be taken away from a process before it completes its execution
+- **Characteristics**:
+  - Allows interruption of a running process
+  - Higher priority processes can interrupt currently running processes
+  - Uses priority scheduling and time-sharing concepts
+  - Provides better response time and resource utilization
+- **Advantages**:
+  - Ensures no single process monopolizes the CPU
+  - Supports real-time and interactive systems
+  - Improves system responsiveness
+- **Disadvantages**:
+  - Overhead due to frequent context switching
+  - More complex implementation
+  - Potential for priority inversion
+
+### Non-pre-emptive Scheduling
+- **Definition**: A scheduling method where a process runs until it completes or voluntarily yields the CPU
+- **Characteristics**:
+  - Once a process starts executing, it continues until completion
+  - No interruption of running processes
+  - Simpler to implement
+- **Advantages**:
+  - Lower overhead (fewer context switches)
+  - Predictable execution
+  - Simpler system design
+- **Disadvantages**:
+  - Potential for process starvation
+  - Poor responsiveness
+  - Less efficient resource utilization
+
+### Key Differences
+| Aspect | Pre-emptive Scheduling | Non-pre-emptive Scheduling |
+|--------|------------------------|----------------------------|
+| Process Interruption | Allowed | Not allowed |
+| CPU Allocation | Can be interrupted mid-execution | Runs to completion |
+| Complexity | More complex | Simpler |
+| Context Switching | Frequent | Minimal |
+| Responsiveness | High | Low |
+| Suitable For | Real-time, interactive systems | Batch processing systems |
+
+
 **CPU scheduling** determines the order in which processes access the CPU. Key concepts include:
 
 - **CPU-I/O Burst Cycle:** Processes alternate between CPU execution and I/O operations.
@@ -64,8 +108,5 @@ Common scheduling algorithms:
 - **Priority Scheduling:** Processes are scheduled based on priority levels.
 - **Real-Time Scheduling:** Ensures processes meet specific timing constraints, using algorithms like Rate Monotonic (RM) and Earliest Deadline First (EDF).
 
+
 Each algorithm has its advantages and trade-offs concerning factors like throughput, turnaround time, and fairness.
-
----
-
-This comprehensive overview covers the fundamental aspects of processes as outlined in Unit 2 of our syllabus.
